@@ -12,7 +12,9 @@ public class LocatorsDemo1 {
 		//maximize the browser window
 		driver.manage().window().maximize();
 		
-	
+		//Open AUT
+		driver.get("");	
+		
 
 	}
 
