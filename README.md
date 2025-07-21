@@ -28,6 +28,10 @@ This project is a complete demonstration of real-world Selenium automation topic
 <Li>Clone the repository</Li>
 <Li>Import into your Java IDE (Eclipse/IntelliJ)</Li>
 <Li>Directly run .java files for basic execution</Li>
+<br>
+
+# Project Status
+🧪 Actively learning & updating
 
 
 
