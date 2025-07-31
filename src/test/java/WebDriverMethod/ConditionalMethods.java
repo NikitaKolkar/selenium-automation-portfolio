@@ -8,22 +8,22 @@ public class ConditionalMethods {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		driver.get("https://practice.expandtesting.com/radio-buttons");
 		
 		//conditional methods can be accessed through webelement and it return the boolean value
 		
 		//isDisplayed()
-		Boolean isDropdownVisible = driver.findElement(By.xpath("//select[@id='dropdowm-menu-1']")).isDisplayed();
-		System.out.println("Is Dropdown Visible? : " + isDropdownVisible);
+		Boolean isRadiobtnVisible = driver.findElement(By.xpath("//label[normalize-space()='Blue']")).isDisplayed();
+		System.out.println("Is Radiobutton Visible? : " + isRadiobtnVisible);
 		
 		//isEnabled()
-		Boolean isValueEnabled = driver.findElement(By.xpath("//input[@value='lettuce']")).isEnabled();
-		System.out.println("Is Radiobox option enabled? : " + isValueEnabled);
+		Boolean isValueEnabled = driver.findElement(By.xpath("//input[@id='green' and @name = 'color']")).isEnabled();
+		System.out.println("Is Radiobutton enabled? : " + isValueEnabled);
 		
 		//isSelected()
-		Boolean isOptionSelected = driver.findElement(By.xpath("//input[@value='pumpkin']")).isSelected();
+		Boolean isOptionSelected = driver.findElement(By.xpath("//input[@id='blue' and @name = 'color']")).isSelected();
 		System.out.println("Is Radiobutton selected? : "+isOptionSelected);
-		Boolean isOptionSelected1 = driver.findElement(By.xpath("//input[@value='lettuce']")).isSelected();
+		Boolean isOptionSelected1 = driver.findElement(By.xpath("//input[@id='red' and @name = 'color']")).isSelected();
 		System.out.println("Is Radiobutton selected? : "+isOptionSelected1);
 		
 	}
